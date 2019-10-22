@@ -220,6 +220,7 @@ public class PlayerController2 : MonoBehaviour
 
         holdingItem = false;
 
+        itemHeld.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         if (facingRight)
             itemHeld.GetComponent<Rigidbody2D>().AddForce(Vector2.right * throwPower, ForceMode2D.Impulse);
         else

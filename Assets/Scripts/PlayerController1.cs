@@ -213,13 +213,13 @@ public class PlayerController1 : MonoBehaviour
 
     public void throwItem()
     {
-
+        //player 1 is on the second floor
         roomMan.dropItem(2, itemHeld);
 
         holdingItem = false;
-
+        itemHeld.GetComponent<Rigidbody2D>().velocity =  Vector3.zero;
         if (facingRight)
-            itemHeld.GetComponent<Rigidbody2D>().AddForce(Vector2.right * throwPower, ForceMode2D.Impulse);
+            itemHeld.GetComponent<Rigidbody2D>().AddForce(Vector2.right * throwPower,ForceMode2D.Impulse);
         else
             itemHeld.GetComponent<Rigidbody2D>().AddForce(Vector2.left * throwPower, ForceMode2D.Impulse);
 
