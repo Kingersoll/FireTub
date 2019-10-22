@@ -96,7 +96,7 @@ public class PlayerController1 : MonoBehaviour
                 
             }
 
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.B))
             {
                 throwItem();
             }
@@ -122,7 +122,7 @@ public class PlayerController1 : MonoBehaviour
             if (EventableObject.GetComponent<EventObject>().isBroken())
             {
                 
-                if (Input.GetKeyDown(KeyCode.F)){
+                if (Input.GetKeyDown(KeyCode.V)){
 
                     print("keyPress");
                     if (holdingItem)

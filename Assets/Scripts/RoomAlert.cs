@@ -36,6 +36,13 @@ public class RoomAlert : MonoBehaviour
    
     void Update()
     {
+        if (Input.GetButtonUp("Cancel"))
+        {
+            Application.Quit();
+        }
+
+
+
         checkEvents();
         if (displayF == true)
             fire.SetActive(true);
