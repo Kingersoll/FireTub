@@ -14,13 +14,15 @@ public class RoomAlert : MonoBehaviour
 
     [SerializeField] GameObject Room;
 
-
     public int numEventObjects;
 
     public int numOngoingEvents;
 
     public EventObject[] roomObjects;
     public List<Event> events = new List<Event>();
+
+    public GameObject doorNumber;
+    private Doorway myDoor;
 
 
     private Event[] Events;
@@ -31,6 +33,9 @@ public class RoomAlert : MonoBehaviour
         fire.SetActive(false);
         water.SetActive(false);
         electric.SetActive(false);
+
+        myDoor = doorNumber.GetComponent<Doorway>();
+        print(myDoor.onFire);
     }
 
    
@@ -75,10 +80,15 @@ public class RoomAlert : MonoBehaviour
                 foundE = true;
         }
         if (foundF == true)
+        {
             displayF = true;
+            myDoor.onFire = true; //Tony's hijacking in this piece of code. When the Fire Alert is visible (hence, the room is flamin'), then tell the Doorway itself it's on fire.
+        }
         else
+        {
             displayF = false;
-
+            myDoor.onFire = false;
+        }
         if (foundW == true)
             displayW = true;
         else

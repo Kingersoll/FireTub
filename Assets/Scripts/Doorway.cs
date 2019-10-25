@@ -9,6 +9,8 @@ public class Doorway : MonoBehaviour
     [SerializeField] GameObject toRoom;
     [SerializeField] Transform spawnLoc;
     private RoomManager RoomMan;
+
+    public bool onFire = false; //This has been added to help Tony make the NPCs burst into flames.
     // Start is called before the first frame update
 
     void Start()

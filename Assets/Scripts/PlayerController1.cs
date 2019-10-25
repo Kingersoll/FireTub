@@ -27,8 +27,14 @@ public class PlayerController1 : MonoBehaviour
     private RoomManager roomMan;
     private GameObject door;
 
+    SpriteRenderer sr;
+
     void Start()
     {
+        sr = gameObject.GetComponent<SpriteRenderer>();
+
+
+
         holdingItem = false;
         facingRight = true;
 
@@ -162,11 +168,13 @@ public class PlayerController1 : MonoBehaviour
         if (facingRight == false && moveInput > 0)
         {
             flip();
+            sr.flipX = true;
         }
 
         else if (facingRight == true && moveInput < 0)
         {
             flip();
+            sr.flipX = false;
         }
     }
 
@@ -174,11 +182,12 @@ public class PlayerController1 : MonoBehaviour
 
     void flip()
     {
-        print(facingRight);
         facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
+
+        //Below is what was previously used to flip the player. This has been changed to the sr.flipX code seen above.
+        //Vector3 Scaler = transform.localScale;
+        //Scaler.x *= -1;
+        //transform.localScale = Scaler;
     }
 
 
