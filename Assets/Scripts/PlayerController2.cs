@@ -22,13 +22,16 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] Transform holdLocation;
     [SerializeField] Transform ray;
 
-
+    SpriteRenderer sr;
 
     private RoomManager roomMan;
     private GameObject door;
 
     void Start()
     {
+        sr = gameObject.GetComponent<SpriteRenderer>();
+
+
         holdingItem = false;
         facingRight = true;
 
@@ -163,11 +166,13 @@ public class PlayerController2 : MonoBehaviour
         if (facingRight == false && moveInput > 0)
         {
             flip();
+            sr.flipX = true;
         }
 
         else if (facingRight == true && moveInput < 0)
         {
             flip();
+            sr.flipX = false;
         }
     }
 
@@ -175,11 +180,7 @@ public class PlayerController2 : MonoBehaviour
 
     void flip()
     {
-        print(facingRight);
         facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
     }
 
 
@@ -250,5 +251,11 @@ public class PlayerController2 : MonoBehaviour
         {
             door = null;
         }
+    }
+
+    public void itemReset()
+    {
+        holdingItem = false;
+        itemHeld = null;
     }
 }

@@ -55,8 +55,11 @@ public class RoomManager : MonoBehaviour
         {
             if (firstFloorActive != null)
                 item.transform.SetParent(firstFloorActive.transform);
-            else
+            else if (item != null)
+            {
                 item.transform.SetParent(null);
+            }
+                
         }
         else
         {
