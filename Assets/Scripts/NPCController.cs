@@ -21,6 +21,7 @@ public class NPCController : MonoBehaviour
 
     Rigidbody2D rb;
     SpriteRenderer sr;
+    AudioSource Source;
 
     Vector3 Flipper;
 
