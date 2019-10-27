@@ -257,4 +257,11 @@ public class PlayerController1 : MonoBehaviour
             door = null;
         }
     }
+
+
+    public void itemReset()
+    {
+        holdingItem = false;
+        itemHeld = null;
+    }
 }

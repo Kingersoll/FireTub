@@ -46,6 +46,11 @@ public class NPCController : MonoBehaviour
             movement = Vector2.zero;
         }
 
+        if (flaming)
+        {
+            movement = new Vector2(directionValue * 2, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        }
+
         //Applies the vector.
         gameObject.GetComponent<Rigidbody2D>().velocity = movement;
 
@@ -101,21 +106,31 @@ public class NPCController : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2);
+            if (!flaming)
+            {
+                yield return new WaitForSeconds(2);
+            }
+
             directionValue = Random.Range(-1, 2);
+
+            yield return new WaitForSeconds(.5f);
         }
     }
 
     IEnumerator timer()
     {
+        transform.gameObject.tag = "Untagged";
         yield return new WaitForSeconds(Random.Range(5, 15));
         inRoom = false;
         sr.enabled = true;
+        transform.gameObject.tag = "Item";
     }
 
     IEnumerator flamingDoorTimer()
     {
+        transform.gameObject.tag = "Untagged";
         yield return new WaitForSeconds(Random.Range(1, 3));
+        transform.gameObject.tag = "Item";
         inRoom = false;
         sr.enabled = true;
         myFlames = Instantiate(flames);
