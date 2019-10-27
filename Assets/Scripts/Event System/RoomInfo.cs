@@ -12,12 +12,12 @@ public class RoomInfo : MonoBehaviour
 
     public List<EventObject> nonBroken = new List<EventObject>();
 
-
     [SerializeField] GameObject Alerts;
 
     public List<Event> issues = new List<Event>();
 
-    // Start is called before the first frame update
+    
+
     void Start()
     {
         for (int i = 0; i < transform.childCount; i++)
@@ -35,30 +35,40 @@ public class RoomInfo : MonoBehaviour
                 numEventObjects++;
             }
         }
+
+        Alerts.GetComponent<RoomAlert>().setNumObjects(numEventObjects);
+
         gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     private void OnEnable()
     {
         getRoomContents();
+
         issues = Alerts.GetComponent<RoomAlert>().getEvents();
 
         foreach(Event E in issues)
         {
             int ran = Random.Range(0, nonBroken.Count);
-            nonBroken[ran].breakObject(E);
-            
+            // if the Game Object isnt broken apply the event
+            if (nonBroken[ran].broken == false)
+            {
+                nonBroken[ran].breakObject(E);
+            }
+            else
+            {
+                
+            }
             getRoomContents();
         }
-        issues.Clear();
+
+        // this is an offender of the room alerts going bye bye
+       
             
     }
+
+    
 
     public void getRoomContents()
     {
@@ -79,4 +89,41 @@ public class RoomInfo : MonoBehaviour
         }
     }
 
+    //eeeek
+    public bool tryAnotherObject(List<Event> E)
+    {
+        // if every Object in the room has an event
+        if (!roomAcceptEvent())
+        {
+            return false;
+        }
+
+        bool condition = false;
+
+        while (condition)
+        {
+
+        }
+
+        return true;
+
+    }
+
+
+    // can this room accept another event
+    public bool roomAcceptEvent()
+    {
+        if (numEventObjects == numOngoingEvents)
+        {
+            return false;
+        }
+
+        else return true;
+    }
+
+    public int howManyObjects()
+    {
+        return numEventObjects;
+    }
 }
+         

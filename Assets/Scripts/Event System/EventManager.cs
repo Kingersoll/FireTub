@@ -7,7 +7,8 @@ public class EventManager : MonoBehaviour
     private GameObject[] problems;
     private GameObject[] AlertObjects;
     public static Event tempEvent;
-   // public List<GameObject> alertObjects= new List<GameObject>();
+    bool start = true;
+    // public List<GameObject> alertObjects= new List<GameObject>();
 
 
 
@@ -15,13 +16,17 @@ public class EventManager : MonoBehaviour
     void Start()
     {
         AlertObjects = GameObject.FindGameObjectsWithTag("RoomAlert");
-        StartCoroutine(problem());
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         
+        if (start) { 
+            StartCoroutine(problem());
+            start = false;
+        }
     }
 
 
@@ -47,20 +52,23 @@ public class EventManager : MonoBehaviour
                 tPick = "Electric";
 
             Event tempEvent = new Event(tPick, sev);
-            print("Hi");
+         
             tempEvent.sing();
-            print("Ho");
+          
             assignEvent(tempEvent);
             
-            yield return new WaitForSeconds(8);
+            yield return new WaitForSeconds(2);
         }
     }
 
     public void assignEvent(Event E)
     {
         int assignLoc = Random.Range(0, AlertObjects.Length - 1);
-        AlertObjects[assignLoc].GetComponent<RoomAlert>().addEvent(E);
 
+        if (AlertObjects[assignLoc].GetComponent<RoomAlert>().hasRoom())
+            AlertObjects[assignLoc].GetComponent<RoomAlert>().addEvent(E);
+        else
+            print("dog");           
 
     }
 

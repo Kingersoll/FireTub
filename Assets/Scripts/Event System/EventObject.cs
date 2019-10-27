@@ -76,6 +76,7 @@ public class EventObject : MonoBehaviour
         onGoingEvent = E;
 
         print(E.getTool());
+
         toolNeeded = E.getTool();
 
         broken = true;
@@ -86,6 +87,7 @@ public class EventObject : MonoBehaviour
 
         //assign rotation to the particle effect so it comes in correctly
         Quaternion rot = new Quaternion(0, 0, 0, 0);
+
         rot.eulerAngles = new Vector3(-90, 0, 0);
 
 

@@ -14,14 +14,18 @@ public class RoomAlert : MonoBehaviour
 
     [SerializeField] GameObject Room;
 
+    private RoomInfo roomInf;
+
     public int numEventObjects;
 
-    public int numOngoingEvents;
+    public int numOngoingEvents=0;
 
     public EventObject[] roomObjects;
+
     public List<Event> events = new List<Event>();
 
     public GameObject doorNumber;
+
     private Doorway myDoor;
 
 
@@ -30,17 +34,28 @@ public class RoomAlert : MonoBehaviour
 
     void Start()
     {
+        roomInf = Room.GetComponent<RoomInfo>();
+
+        //numEventObjects = roomInf.howManyObjects();
+
         fire.SetActive(false);
         water.SetActive(false);
         electric.SetActive(false);
 
         myDoor = doorNumber.GetComponent<Doorway>();
-        print(myDoor.onFire);
+
+
+        //print(myDoor.onFire);
+                                                                                                    
+        
     }
+
+   
 
    
     void Update()
     {
+        //important for the arcade machine to close the program
         if (Input.GetButtonUp("Cancel"))
         {
             Application.Quit();
@@ -79,6 +94,7 @@ public class RoomAlert : MonoBehaviour
             else if (E.getTool().Equals("Electric"))
                 foundE = true;
         }
+
         if (foundF == true)
         {
             displayF = true;
@@ -89,6 +105,7 @@ public class RoomAlert : MonoBehaviour
             displayF = false;
             myDoor.onFire = false;
         }
+
         if (foundW == true)
             displayW = true;
         else
@@ -131,4 +148,19 @@ public class RoomAlert : MonoBehaviour
         return events;
     }
 
+    public bool hasRoom()
+    {
+        print(numOngoingEvents);
+        print(numEventObjects);
+        if (numOngoingEvents < numEventObjects)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public void setNumObjects(int num)
+    {
+        numEventObjects = num;
+    }
 }

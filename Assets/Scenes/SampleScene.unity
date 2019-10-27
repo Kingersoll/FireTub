@@ -577,6 +577,7 @@ MonoBehaviour:
   hallwayDoor: 1
   toRoom: {fileID: 902590099}
   spawnLoc: {fileID: 866063592}
+  onFire: 0
 --- !u!61 &230315121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -688,6 +689,7 @@ MonoBehaviour:
   numEventObjects: 0
   numOngoingEvents: 0
   roomObjects: []
+  doorNumber: {fileID: 0}
 --- !u!4 &232792861
 Transform:
   m_ObjectHideFlags: 0
@@ -741,6 +743,7 @@ MonoBehaviour:
   numEventObjects: 0
   numOngoingEvents: 0
   roomObjects: []
+  doorNumber: {fileID: 0}
 --- !u!4 &275514059
 Transform:
   m_ObjectHideFlags: 0
@@ -864,6 +867,7 @@ MonoBehaviour:
   hallwayDoor: 0
   toRoom: {fileID: 0}
   spawnLoc: {fileID: 2082262118}
+  onFire: 0
 --- !u!61 &312861514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1066,6 +1070,7 @@ MonoBehaviour:
   hallwayDoor: 1
   toRoom: {fileID: 1615763771}
   spawnLoc: {fileID: 1274258144}
+  onFire: 0
 --- !u!61 &327868139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2086,6 +2091,7 @@ MonoBehaviour:
   hallwayDoor: 0
   toRoom: {fileID: 0}
   spawnLoc: {fileID: 1959044302}
+  onFire: 0
 --- !u!61 &692444643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2664,6 +2670,7 @@ MonoBehaviour:
   numEventObjects: 0
   numOngoingEvents: 0
   roomObjects: []
+  doorNumber: {fileID: 0}
 --- !u!4 &818898490
 Transform:
   m_ObjectHideFlags: 0
@@ -2880,6 +2887,7 @@ MonoBehaviour:
   hallwayDoor: 0
   toRoom: {fileID: 0}
   spawnLoc: {fileID: 230315119}
+  onFire: 0
 --- !u!61 &866063594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3083,6 +3091,7 @@ MonoBehaviour:
   hallwayDoor: 1
   toRoom: {fileID: 1366927800}
   spawnLoc: {fileID: 1941130550}
+  onFire: 0
 --- !u!61 &898044262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3381,6 +3390,7 @@ MonoBehaviour:
   numEventObjects: 0
   numOngoingEvents: 0
   roomObjects: []
+  doorNumber: {fileID: 0}
 --- !u!4 &957701084
 Transform:
   m_ObjectHideFlags: 0
@@ -4209,6 +4219,7 @@ MonoBehaviour:
   numEventObjects: 0
   numOngoingEvents: 0
   roomObjects: []
+  doorNumber: {fileID: 0}
 --- !u!4 &1161536559
 Transform:
   m_ObjectHideFlags: 0
@@ -4262,6 +4273,7 @@ MonoBehaviour:
   numEventObjects: 0
   numOngoingEvents: 0
   roomObjects: []
+  doorNumber: {fileID: 0}
 --- !u!4 &1173481403
 Transform:
   m_ObjectHideFlags: 0
@@ -4787,6 +4799,7 @@ MonoBehaviour:
   hallwayDoor: 0
   toRoom: {fileID: 0}
   spawnLoc: {fileID: 327868137}
+  onFire: 0
 --- !u!61 &1274258146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5303,7 +5316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1363015223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6209,6 +6222,7 @@ MonoBehaviour:
   hallwayDoor: 0
   toRoom: {fileID: 0}
   spawnLoc: {fileID: 1528334947}
+  onFire: 0
 --- !u!61 &1474658514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6370,6 +6384,7 @@ MonoBehaviour:
   hallwayDoor: 1
   toRoom: {fileID: 1994026826}
   spawnLoc: {fileID: 1778180992}
+  onFire: 0
 --- !u!61 &1528334949
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7065,7 +7080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1653949646
 Transform:
   m_ObjectHideFlags: 0
@@ -7947,6 +7962,7 @@ MonoBehaviour:
   hallwayDoor: 0
   toRoom: {fileID: 0}
   spawnLoc: {fileID: 1977151057}
+  onFire: 0
 --- !u!61 &1778180994
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8057,6 +8073,7 @@ MonoBehaviour:
   numEventObjects: 0
   numOngoingEvents: 0
   roomObjects: []
+  doorNumber: {fileID: 0}
 --- !u!4 &1803100951
 Transform:
   m_ObjectHideFlags: 0
@@ -8609,6 +8626,7 @@ MonoBehaviour:
   hallwayDoor: 0
   toRoom: {fileID: 0}
   spawnLoc: {fileID: 898044260}
+  onFire: 0
 --- !u!61 &1941130552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8972,6 +8990,7 @@ MonoBehaviour:
   hallwayDoor: 1
   toRoom: {fileID: 775788150}
   spawnLoc: {fileID: 692444641}
+  onFire: 0
 --- !u!61 &1959044304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9126,6 +9145,7 @@ MonoBehaviour:
   hallwayDoor: 1
   toRoom: {fileID: 1653949645}
   spawnLoc: {fileID: 1778180992}
+  onFire: 0
 --- !u!61 &1977151059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9299,7 +9319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1994026827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9622,6 +9642,7 @@ MonoBehaviour:
   hallwayDoor: 1
   toRoom: {fileID: 1363015222}
   spawnLoc: {fileID: 1778180992}
+  onFire: 0
 --- !u!61 &2082262120
 BoxCollider2D:
   m_ObjectHideFlags: 0
