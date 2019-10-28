@@ -63,12 +63,15 @@ public class EventManager : MonoBehaviour
 
     public void assignEvent(Event E)
     {
-        int assignLoc = Random.Range(0, AlertObjects.Length - 1);
+        int assignLoc = Random.Range(0, AlertObjects.Length );
 
         if (AlertObjects[assignLoc].GetComponent<RoomAlert>().hasRoom())
             AlertObjects[assignLoc].GetComponent<RoomAlert>().addEvent(E);
         else
-            print("dog");           
+        {
+            assignEvent(E);
+        }
+                      
 
     }
 

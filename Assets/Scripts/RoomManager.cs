@@ -51,15 +51,13 @@ public class RoomManager : MonoBehaviour
     
     public void dropItem(int floor, GameObject item)
     {
+
         if(floor == 1)
         {
             if (firstFloorActive != null)
                 item.transform.SetParent(firstFloorActive.transform);
-            else if (item != null)
-            {
+            else
                 item.transform.SetParent(null);
-            }
-                
         }
         else
         {
@@ -69,4 +67,5 @@ public class RoomManager : MonoBehaviour
                 item.transform.SetParent(null);
         }
     }
+    
 }
