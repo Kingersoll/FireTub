@@ -151,8 +151,8 @@ public class RoomAlert : MonoBehaviour
 
     public bool hasRoom()
     {
-        print(numOngoingEvents);
-        print(numEventObjects);
+
+    
         if (numOngoingEvents < numEventObjects)
         {
             return true;

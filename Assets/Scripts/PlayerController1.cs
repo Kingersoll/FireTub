@@ -20,9 +20,10 @@ public class PlayerController1 : MonoBehaviour
     [SerializeField] float throwPower;
     [SerializeField] float moveSpeed;
     [SerializeField] Transform holdLocation;
-    [SerializeField] Transform ray;
+    [SerializeField] Transform rayRight;
+    [SerializeField] Transform rayLeft;
 
-    
+
 
     private RoomManager roomMan;
     private GameObject door;
@@ -122,16 +123,17 @@ public class PlayerController1 : MonoBehaviour
 
 
         //logic for fixing events on objects, might kind of suck
-        if(EventableObject != null)
+        if(holdingItem)
         {
             
-            if (EventableObject.GetComponent<EventObject>().isBroken())
+            if (Input.GetKeyDown(KeyCode.V))
             {
                 
-                if (Input.GetKeyDown(KeyCode.V)){
+                if (EventableObject != null)
+                {
 
                     
-                    if (holdingItem)
+                    if (EventableObject.GetComponent<EventObject>().isBroken())
                     {
                        
                         if (itemHeld.GetComponent<Item>().getName().Equals(EventableObject.GetComponent<EventObject>().getToolNeeded()))
@@ -139,12 +141,22 @@ public class PlayerController1 : MonoBehaviour
                             roomMan.getSecondFloor().GetComponent<RoomInfo>().getAlert().GetComponent<RoomAlert>().removeEvent(EventableObject.GetComponent<EventObject>().onGoingEvent);
                             EventableObject.GetComponent<EventObject>().Fix();
                         }
-                    }
+
                        
-                } 
-                  
-                
+
+                    }
+                   
+                }
+                if (itemHeld.GetComponent<Item>() != null)
+                {
+                    if (itemHeld.GetComponent<Item>().getName().Equals("Fire"))
+                    {
+                        print("called");
+                        fireEx();
+                    }
+                }
             }
+            
         }
 
 
@@ -197,13 +209,13 @@ public class PlayerController1 : MonoBehaviour
         RaycastHit2D hit;
         if (facingRight) {
            
-            hit = Physics2D.Raycast(ray.position, Vector2.right, .3f);
+            hit = Physics2D.Raycast(rayRight.position, Vector2.right, .3f);
             print(hit.distance);
         }
         else
         {
            
-            hit = Physics2D.Raycast(ray.position, Vector2.left, .3f);
+            hit = Physics2D.Raycast(rayLeft.position, Vector2.left, .3f);
             print(hit.distance);
         }
 
@@ -264,4 +276,42 @@ public class PlayerController1 : MonoBehaviour
         holdingItem = false;
         itemHeld = null;
     }
+
+   private void fireEx()
+    {
+
+        RaycastHit2D[] hits;
+        if (facingRight)
+        {
+
+            hits = Physics2D.RaycastAll(rayRight.position, Vector2.right, .3f);
+           
+        }
+        else
+        {
+
+            hits = Physics2D.RaycastAll(rayLeft.position, Vector2.left, .3f);
+            
+        }
+
+        foreach( RaycastHit2D H in hits)
+        {
+            print("runs");
+            //14th layer is the layer of Npcs so this detects if its an Npc
+            if (H.collider.gameObject.layer == 14)
+            {
+                print("la");
+                NPCController temp = H.collider.gameObject.GetComponent<NPCController>();
+                if (temp.isOnFire())
+                {
+                    //put the fire out
+                    temp.putOutFire();
+                    print("yeet");
+                }
+
+            }
+        }
+
+    }
+
 }

@@ -50,7 +50,7 @@ public class NPCController : MonoBehaviour
         {
             movement = new Vector2(directionValue * 2, gameObject.GetComponent<Rigidbody2D>().velocity.y);
         }
-
+        
         //Applies the vector.
         gameObject.GetComponent<Rigidbody2D>().velocity = movement;
 
@@ -136,5 +136,21 @@ public class NPCController : MonoBehaviour
         myFlames = Instantiate(flames);
         myFlames.transform.SetParent(gameObject.transform, false);
         flaming = true;
+    }
+
+
+    public bool isOnFire(){
+        return flaming;
+    }
+
+    public void setOnfire()
+    {
+        flaming = true;
+    }
+
+    public void putOutFire()
+    {
+        flaming = false;
+        GameObject.Destroy(myFlames);
     }
 }

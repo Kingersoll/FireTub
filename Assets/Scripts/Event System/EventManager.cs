@@ -57,7 +57,7 @@ public class EventManager : MonoBehaviour
           
             assignEvent(tempEvent);
             
-            yield return new WaitForSeconds(8);
+            yield return new WaitForSeconds(2);
         }
     }
 
