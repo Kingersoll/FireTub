@@ -26,6 +26,7 @@ public class PlayerController1 : MonoBehaviour
 
 
     private RoomManager roomMan;
+    
     private GameObject door;
 
     SpriteRenderer sr;
@@ -33,12 +34,11 @@ public class PlayerController1 : MonoBehaviour
     void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
-
-
-
+    
         holdingItem = false;
         facingRight = true;
 
+        
         roomMan = GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManager>();
 
         //player and items ignore physics
@@ -138,8 +138,10 @@ public class PlayerController1 : MonoBehaviour
                        
                         if (itemHeld.GetComponent<Item>().getName().Equals(EventableObject.GetComponent<EventObject>().getToolNeeded()))
                         {
+                            //when An object is fixed first remove its reference in the event system, tell the oobject its fixed, add score
                             roomMan.getSecondFloor().GetComponent<RoomInfo>().getAlert().GetComponent<RoomAlert>().removeEvent(EventableObject.GetComponent<EventObject>().onGoingEvent);
                             EventableObject.GetComponent<EventObject>().Fix();
+                           
                         }
 
                        

@@ -19,16 +19,25 @@ public class EventObject : MonoBehaviour
     [SerializeField] GameObject fireP;
     [SerializeField] GameObject electricP;
 
+    [SerializeField] float points;
+
     public GameObject particles;
 
     public Event onGoingEvent;
 
+    private EventManager EM;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        EM = GameObject.FindGameObjectWithTag("EventManager").GetComponent<EventManager>();
 
-      
+        //unless otherwise stated each object is worth 10 points
+       if(points == 0)
+        {
+            points = 10;
+        }
+
     }
 
     // Update is called once per frame
@@ -67,6 +76,8 @@ public class EventObject : MonoBehaviour
 
         //call something that terminates the event and does score things// need to figure out timer system cuz timer wont update while disabled...
         onGoingEvent = null;
+
+        EM.addScore(points);
     }
     
     //make take an event passed in

@@ -1,13 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class EventManager : MonoBehaviour
 {
     private GameObject[] problems;
     private GameObject[] AlertObjects;
+    private GameObject[] Npcs;
     public static Event tempEvent;
     bool start = true;
+
+    public float numIssues;
+
+    public float score = 0;
+
+    [SerializeField] Text IssueText;
+    [SerializeField] Text scoreText;
     // public List<GameObject> alertObjects= new List<GameObject>();
 
 
@@ -15,8 +23,13 @@ public class EventManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         AlertObjects = GameObject.FindGameObjectsWithTag("RoomAlert");
-        
+
+        //this wil also locate the three tool items and all of the npcs 
+        findNpcs();
+
+        setScoreText();
     }
 
     // Update is called once per frame
@@ -27,6 +40,9 @@ public class EventManager : MonoBehaviour
             StartCoroutine(problem());
             start = false;
         }
+
+        numIssues = findNumIssues();
+        setIssueText();
     }
 
 
@@ -57,7 +73,7 @@ public class EventManager : MonoBehaviour
           
             assignEvent(tempEvent);
             
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(9);
         }
     }
 
@@ -107,5 +123,59 @@ public class EventManager : MonoBehaviour
             return true;
         
 
+    }
+
+    public int findNumIssues()
+    {
+        int nIssues = 0;
+        //issues in rooms
+        for (int i = 0; i< AlertObjects.Length; i++)
+        {
+            nIssues += AlertObjects[i].GetComponent<RoomAlert>().numOngoingEvents;
+        }
+        //issues attached to people
+        for(int i=0; i < Npcs.Length; i++)
+        {
+            //walking npcs
+            if (Npcs[i].GetComponent<NPCController>() != null)
+            {
+                //if theyre on fire
+                if (Npcs[i].GetComponent<NPCController>().isOnFire())
+                {
+                    nIssues++;
+                }
+            }
+            else if (Npcs[i].GetComponent<NPCNewGuy>() != null)
+            {
+                nIssues++;
+            }
+
+
+        }
+
+
+        return nIssues;
+    }
+
+
+    public void addScore(float S)
+    {
+        score += S;
+        setScoreText();
+    }
+
+    public void setScoreText()
+    {
+        scoreText.text = "Score: " + score.ToString();
+    }
+
+    public void setIssueText()
+    {
+        IssueText.text = "issues: " + numIssues.ToString();
+    }
+
+    public void findNpcs()
+    {
+        Npcs = GameObject.FindGameObjectsWithTag("Item");
     }
 }

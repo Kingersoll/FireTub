@@ -10,6 +10,7 @@ TagManager:
   - Door
   - RoomManager
   - RoomAlert
+  - EventManager
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - DumbwaiterWalls
   - RoomInteriors
   - NPCs
-  - 
+  - New Guy NPC
   - 
   - 
   - 
