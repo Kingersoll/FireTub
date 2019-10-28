@@ -124,19 +124,19 @@ public class PlayerController1 : MonoBehaviour
         //logic for fixing events on objects, might kind of suck
         if(EventableObject != null)
         {
-            print("people are nice");
+            
             if (EventableObject.GetComponent<EventObject>().isBroken())
             {
                 
                 if (Input.GetKeyDown(KeyCode.V)){
 
-                    print("keyPress");
+                    
                     if (holdingItem)
                     {
-                        print("heldItem");
+                       
                         if (itemHeld.GetComponent<Item>().getName().Equals(EventableObject.GetComponent<EventObject>().getToolNeeded()))
                         {
-                            print("attempted fix");
+                            roomMan.getSecondFloor().GetComponent<RoomInfo>().getAlert().GetComponent<RoomAlert>().removeEvent(EventableObject.GetComponent<EventObject>().onGoingEvent);
                             EventableObject.GetComponent<EventObject>().Fix();
                         }
                     }

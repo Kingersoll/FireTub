@@ -125,5 +125,16 @@ public class RoomInfo : MonoBehaviour
     {
         return numEventObjects;
     }
+
+    public GameObject getAlert()
+    {
+        return Alerts;
+    }
+
+    public void test2()
+    {
+        print("test2");
+    }
+
 }
          

@@ -132,9 +132,10 @@ public class RoomAlert : MonoBehaviour
     }
 
     //useless
-    public void removeEvent(int index)
+    public void removeEvent(Event E)
     {
-        Events[index] = null;
+        events.Remove(E);
+
         numOngoingEvents -= 1;
     }
 
@@ -162,5 +163,10 @@ public class RoomAlert : MonoBehaviour
     public void setNumObjects(int num)
     {
         numEventObjects = num;
+    }
+
+    public void test()
+    {
+        print("test");
     }
 }

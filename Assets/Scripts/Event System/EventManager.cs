@@ -57,22 +57,55 @@ public class EventManager : MonoBehaviour
           
             assignEvent(tempEvent);
             
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(8);
         }
     }
 
+
+    // the recursion in this function is causing issues I believe
     public void assignEvent(Event E)
     {
         int assignLoc = Random.Range(0, AlertObjects.Length );
 
-        if (AlertObjects[assignLoc].GetComponent<RoomAlert>().hasRoom())
-            AlertObjects[assignLoc].GetComponent<RoomAlert>().addEvent(E);
-        else
+        if (openRoom())
         {
-            assignEvent(E);
+            if (AlertObjects[assignLoc].GetComponent<RoomAlert>().hasRoom())
+                AlertObjects[assignLoc].GetComponent<RoomAlert>().addEvent(E);
+            else
+            {
+                assignEvent(E);
+            }
         }
+       
                       
 
     }
 
+    //checks all the rooms to see if there is an empty spot in any of them
+    public bool openRoom()
+    {
+        int roomsFull=0;
+        int assignLoc = Random.Range(0, AlertObjects.Length);
+
+        for(int i =0; i < AlertObjects.Length; i++)
+        {
+            if (AlertObjects[i].GetComponent<RoomAlert>().hasRoom())
+            {
+                //if has room do nothing
+            }
+            else
+            {
+                roomsFull++;
+            }
+
+        }
+        if (roomsFull == AlertObjects.Length)
+        {
+            return false;
+        }
+        else
+            return true;
+        
+
+    }
 }
