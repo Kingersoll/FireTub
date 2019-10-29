@@ -23,6 +23,7 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] Transform rayRight;
     [SerializeField] Transform rayLeft;
 
+    Animator animator;
     SpriteRenderer sr;
 
     private RoomManager roomMan;
@@ -31,6 +32,7 @@ public class PlayerController2 : MonoBehaviour
     void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
 
 
         holdingItem = false;
@@ -185,6 +187,16 @@ public class PlayerController2 : MonoBehaviour
             flip();
             sr.flipX = false;
         }
+
+
+        float xSpeed = GetComponent<Rigidbody2D>().velocity.x;
+
+        if (Mathf.Abs(xSpeed) > 0)
+        {
+            animator.SetFloat("XSpeed", 1);
+        }
+        else
+            animator.SetFloat("XSpeed", -1);
     }
 
 

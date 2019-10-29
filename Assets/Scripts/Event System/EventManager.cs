@@ -129,6 +129,7 @@ public class EventManager : MonoBehaviour
 
     public int findNumIssues()
     {
+        findNpcs();
         int nIssues = 0;
         //issues in rooms
         for (int i = 0; i< AlertObjects.Length; i++)
