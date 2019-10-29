@@ -134,6 +134,7 @@ public class NPCController : MonoBehaviour
         inRoom = false;
         sr.enabled = true;
         myFlames = Instantiate(flames);
+        myFlames.GetComponent<Renderer>().sortingOrder = 1;
         myFlames.transform.SetParent(gameObject.transform, false);
         flaming = true;
     }

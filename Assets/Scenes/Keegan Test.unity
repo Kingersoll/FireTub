@@ -154,7 +154,7 @@ MonoBehaviour:
   IssueText: {fileID: 555446030}
   scoreText: {fileID: 2017546650}
   ChaosBar: {fileID: 1903253886}
-  numberOfIssuesToCrash: 10
+  numberOfIssuesToCrash: 14
 --- !u!4 &43220421
 Transform:
   m_ObjectHideFlags: 0
@@ -376,7 +376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200654679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.232, y: -0.149, z: 0}
+  m_LocalPosition: {x: -0.517, y: -0.149, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 775788154}
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 429370687}
   - component: {fileID: 429370686}
   m_Layer: 13
-  m_Name: stove2
+  m_Name: Toaster
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1626,7 +1626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429370684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.572, y: -0.149, z: 0}
+  m_LocalPosition: {x: -0.364, y: -0.101, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 1363015226}
@@ -1649,7 +1649,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.11, y: 0.08}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1673,8 +1673,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 1363015222}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: 5c9326d814d294d4a92aedd87dfd2185, type: 3}
+  brokenSprite: {fileID: 21300000, guid: 5c9326d814d294d4a92aedd87dfd2185, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -1718,7 +1718,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c9326d814d294d4a92aedd87dfd2185, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1990,7 +1990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &555446029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2651,7 +2651,7 @@ GameObject:
   - component: {fileID: 715570228}
   - component: {fileID: 715570227}
   m_Layer: 13
-  m_Name: stove2
+  m_Name: Tub
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2665,7 +2665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715570225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.051, y: -0.149, z: 0}
+  m_LocalPosition: {x: 0.047, y: -0.243, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 1366927802}
@@ -2688,7 +2688,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.25, y: 0.09}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2712,8 +2712,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 1366927800}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: ced1a4d64465da94288a28fd66d65ed0, type: 3}
+  brokenSprite: {fileID: 21300000, guid: ced1a4d64465da94288a28fd66d65ed0, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -2757,7 +2757,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ced1a4d64465da94288a28fd66d65ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2981,7 +2981,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e16ca04354e2ef942b33164ef190e66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dc93d54778227d458e01227345a5298, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3069,7 +3069,7 @@ Transform:
   m_GameObject: {fileID: 788243375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.028, y: 0.152, z: -0.63559765}
-  m_LocalScale: {x: 14.491876, y: 2.2385, z: 0.12677793}
+  m_LocalScale: {x: 15.361387, y: 2.37281, z: 0.1343846}
   m_Children: []
   m_Father: {fileID: 775788154}
   m_RootOrder: 2
@@ -3442,7 +3442,7 @@ Transform:
   m_GameObject: {fileID: 847037271}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.028, y: 0.152, z: -0.63559765}
-  m_LocalScale: {x: 14.491876, y: 2.2385, z: 0.12677793}
+  m_LocalScale: {x: 15.612097, y: 2.411536, z: 0.13657786}
   m_Children: []
   m_Father: {fileID: 1615763775}
   m_RootOrder: 2
@@ -3794,7 +3794,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e16ca04354e2ef942b33164ef190e66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00fab7a05a4d8ed4f8a37b5e46817e36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4324,7 +4324,7 @@ GameObject:
   - component: {fileID: 982671938}
   - component: {fileID: 982671937}
   m_Layer: 13
-  m_Name: stove2
+  m_Name: toilet
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4338,7 +4338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982671935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.572, y: -0.149, z: 0}
+  m_LocalPosition: {x: 0.641, y: -0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 1615763775}
@@ -4361,7 +4361,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.16, y: 0.26}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4385,8 +4385,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 1615763771}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: eb60a50630dacb9479cd9b7b27406b38, type: 3}
+  brokenSprite: {fileID: 21300000, guid: eb60a50630dacb9479cd9b7b27406b38, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -4430,7 +4430,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb60a50630dacb9479cd9b7b27406b38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4685,8 +4685,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036649709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.028, y: 0.152, z: -0.63559765}
-  m_LocalScale: {x: 14.491876, y: 2.2385, z: 0.12677793}
+  m_LocalPosition: {x: 0.045, y: 0.167, z: -0.63559765}
+  m_LocalScale: {x: 15.678522, y: 2.4217963, z: 0.13715898}
   m_Children: []
   m_Father: {fileID: 1366927802}
   m_RootOrder: 2
@@ -4822,7 +4822,7 @@ GameObject:
   - component: {fileID: 1077108722}
   - component: {fileID: 1077108721}
   m_Layer: 13
-  m_Name: Stove
+  m_Name: toaster
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4836,7 +4836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077108719}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.232, y: -0.149, z: 0}
+  m_LocalPosition: {x: -0.362, y: -0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 902590103}
@@ -4859,7 +4859,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.11, y: 0.08}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4883,8 +4883,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 902590099}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: 5c9326d814d294d4a92aedd87dfd2185, type: 3}
+  brokenSprite: {fileID: 21300000, guid: 5c9326d814d294d4a92aedd87dfd2185, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -4928,7 +4928,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c9326d814d294d4a92aedd87dfd2185, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5207,7 +5207,7 @@ GameObject:
   - component: {fileID: 1176634279}
   - component: {fileID: 1176634278}
   m_Layer: 13
-  m_Name: stove2
+  m_Name: Lamp
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5221,7 +5221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176634276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.572, y: -0.149, z: 0}
+  m_LocalPosition: {x: 0.307, y: -0.095, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 1994026830}
@@ -5244,7 +5244,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.14, y: 0.19}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5268,8 +5268,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 1994026826}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: c03e4af0f464e7242b586042ce036069, type: 3}
+  brokenSprite: {fileID: 21300000, guid: c03e4af0f464e7242b586042ce036069, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -5313,7 +5313,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03e4af0f464e7242b586042ce036069, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5427,7 +5427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222607382}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.232, y: -0.149, z: 0}
+  m_LocalPosition: {x: -0.503, y: -0.149, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 1653949646}
@@ -5556,7 +5556,7 @@ Transform:
   m_GameObject: {fileID: 1231085046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.028, y: 0.152, z: -0.63559765}
-  m_LocalScale: {x: 14.491876, y: 2.2385, z: 0.12677793}
+  m_LocalScale: {x: 15.216469, y: 2.350425, z: 0.13311683}
   m_Children: []
   m_Father: {fileID: 1994026830}
   m_RootOrder: 2
@@ -6007,7 +6007,7 @@ GameObject:
   - component: {fileID: 1342730130}
   - component: {fileID: 1342730129}
   m_Layer: 13
-  m_Name: stove2
+  m_Name: Toilet
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6044,7 +6044,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.16, y: 0.26}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6068,8 +6068,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 1653949645}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: eb60a50630dacb9479cd9b7b27406b38, type: 3}
+  brokenSprite: {fileID: 21300000, guid: eb60a50630dacb9479cd9b7b27406b38, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -6113,7 +6113,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb60a50630dacb9479cd9b7b27406b38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6223,7 +6223,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e16ca04354e2ef942b33164ef190e66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dc93d54778227d458e01227345a5298, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6379,7 +6379,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e16ca04354e2ef942b33164ef190e66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00fab7a05a4d8ed4f8a37b5e46817e36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7099,12 +7099,13 @@ RectTransform:
   m_Children:
   - {fileID: 1903253886}
   - {fileID: 221147216}
+  - {fileID: 1794897999}
   m_Father: {fileID: 1512285392}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11, y: -2}
+  m_AnchoredPosition: {x: 4, y: 19}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459996920
@@ -7777,7 +7778,7 @@ Transform:
   m_GameObject: {fileID: 1611382487}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.028, y: 0.152, z: -0.63559765}
-  m_LocalScale: {x: 14.491876, y: 2.2385, z: 0.12677793}
+  m_LocalScale: {x: 15.192808, y: 2.3467703, z: 0.13290983}
   m_Children: []
   m_Father: {fileID: 1653949646}
   m_RootOrder: 2
@@ -7961,7 +7962,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e16ca04354e2ef942b33164ef190e66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dc93d54778227d458e01227345a5298, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8306,7 +8307,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e16ca04354e2ef942b33164ef190e66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00fab7a05a4d8ed4f8a37b5e46817e36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8400,7 +8401,7 @@ Transform:
   m_GameObject: {fileID: 1677366023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.028, y: 0.152, z: -0.63559765}
-  m_LocalScale: {x: 14.491876, y: 2.2385, z: 0.12677793}
+  m_LocalScale: {x: 15.361387, y: 2.37281, z: 0.1343846}
   m_Children: []
   m_Father: {fileID: 1363015226}
   m_RootOrder: 2
@@ -8549,7 +8550,7 @@ GameObject:
   - component: {fileID: 1713889957}
   - component: {fileID: 1713889956}
   m_Layer: 13
-  m_Name: stove2
+  m_Name: lamp
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8563,7 +8564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713889954}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.572, y: -0.149, z: 0}
+  m_LocalPosition: {x: 0.307, y: -0.096, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 775788154}
@@ -8586,7 +8587,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.14, y: 0.19}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8610,8 +8611,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 775788150}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: c03e4af0f464e7242b586042ce036069, type: 3}
+  brokenSprite: {fileID: 21300000, guid: c03e4af0f464e7242b586042ce036069, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -8655,7 +8656,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03e4af0f464e7242b586042ce036069, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8905,7 +8906,7 @@ Transform:
   m_GameObject: {fileID: 1769670686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.028, y: 0.152, z: -0.63559765}
-  m_LocalScale: {x: 14.491876, y: 2.2385, z: 0.12677793}
+  m_LocalScale: {x: 15.515002, y: 2.3965383, z: 0.13572846}
   m_Children: []
   m_Father: {fileID: 902590103}
   m_RootOrder: 2
@@ -9140,6 +9141,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1794897998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1794897999}
+  - component: {fileID: 1794898001}
+  - component: {fileID: 1794898000}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1794897999
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794897998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1459996919}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -295, y: -44}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1794898000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794897998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Chaos
+
+'
+--- !u!222 &1794898001
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794897998}
+  m_CullTransparentMesh: 0
 --- !u!1 &1803100949
 GameObject:
   m_ObjectHideFlags: 0
@@ -9221,7 +9303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807705608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.232, y: -0.149, z: 0}
+  m_LocalPosition: {x: -0.51, y: -0.149, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 1363015226}
@@ -10670,7 +10752,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e16ca04354e2ef942b33164ef190e66f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9c3c542aa97aa34c97924170612fc63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11009,7 +11091,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034977828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.232, y: -0.149, z: 0}
+  m_LocalPosition: {x: -0.51, y: -0.149, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 1994026830}
@@ -11425,7 +11507,7 @@ GameObject:
   - component: {fileID: 2145690060}
   - component: {fileID: 2145690059}
   m_Layer: 13
-  m_Name: stove2
+  m_Name: sink
   m_TagString: EventObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11439,7 +11521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145690057}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.572, y: -0.149, z: 0}
+  m_LocalPosition: {x: 0.486, y: -0.149, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.12677793}
   m_Children: []
   m_Father: {fileID: 902590103}
@@ -11462,7 +11544,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.32}
+    oldSize: {x: 0.2, y: 0.29}
     newSize: {x: 0.2, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11486,8 +11568,8 @@ MonoBehaviour:
   broken: 0
   toolNeeded: 
   insideRoom: {fileID: 902590099}
-  fixedSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
-  brokenSprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  fixedSprite: {fileID: 21300000, guid: 1a9dbcbdf7f96eb4b804aa44ef33cec2, type: 3}
+  brokenSprite: {fileID: 21300000, guid: 1a9dbcbdf7f96eb4b804aa44ef33cec2, type: 3}
   waterP: {fileID: 2812080367035096926, guid: ac685630271305b4ab171adc152c66c0, type: 3}
   fireP: {fileID: 6323841931579834404, guid: bada5facd9cd1d144b76b6319d5d885d, type: 3}
   electricP: {fileID: 5840349062747761927, guid: c4e6ec3a41aec1d49bf5cc722af61046,
@@ -11531,7 +11613,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7102cde7e2c48e44b909a18f64a4ee4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a9dbcbdf7f96eb4b804aa44ef33cec2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11985,7 +12067,7 @@ PrefabInstance:
     - target: {fileID: 5961040020714455677, guid: 9c3a40a92b145a440bf94e60bcc26203,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.509
+      value: -0.501
       objectReference: {fileID: 0}
     - target: {fileID: 5961040020714455677, guid: 9c3a40a92b145a440bf94e60bcc26203,
         type: 3}
