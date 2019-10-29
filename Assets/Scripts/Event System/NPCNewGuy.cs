@@ -21,7 +21,7 @@ public class NPCNewGuy : MonoBehaviour
 
     private int heldBy;
 
-
+    [SerializeField] float spawnPower;
 
     public bool inRoot = true;
 
@@ -99,6 +99,8 @@ public class NPCNewGuy : MonoBehaviour
 
 
             myRoomRequest.transform.SetParent(gameObject.transform, false);
+
+        GetComponent<Rigidbody2D>().AddForce(Vector2.left* spawnPower, ForceMode2D.Impulse);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

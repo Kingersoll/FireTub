@@ -96,7 +96,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.08}
+  m_Offset: {x: 0, y: 0.0033158362}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -107,7 +107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.12}
+  m_Size: {x: 0.15, y: 0.2866317}
   m_EdgeRadius: 0
 --- !u!50 &5603005597841460431
 Rigidbody2D:
@@ -156,4 +156,5 @@ MonoBehaviour:
     type: 3}
   RoomRequest1st3: {fileID: 402186494947321544, guid: f3437714e5452e44880c55657f288b39,
     type: 3}
+  spawnPower: 1
   inRoot: 1
