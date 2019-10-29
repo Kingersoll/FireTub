@@ -49,7 +49,7 @@ public class ItemTransport : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Z))
         {
             liftEnabled = true;
         }
