@@ -80,7 +80,7 @@ public class EventManager : MonoBehaviour
           
             assignEvent(tempEvent);
             
-            yield return new WaitForSeconds(9);
+            yield return new WaitForSeconds(1);
         }
     }
 
@@ -190,7 +190,7 @@ public class EventManager : MonoBehaviour
     {
         if(numIssues == numberOfIssuesToCrash)
         {
-
+            SceneManager.LoadScene(1);
         }
         float remBar = numIssues / numberOfIssuesToCrash;
 
