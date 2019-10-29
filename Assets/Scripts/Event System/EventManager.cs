@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class EventManager : MonoBehaviour
 {
     private GameObject[] problems;
@@ -17,10 +19,12 @@ public class EventManager : MonoBehaviour
     [SerializeField] Text IssueText;
     [SerializeField] Text scoreText;
 
-    [SerializeField] AnimatorControllerParameter yspeed;
-    // public List<GameObject> alertObjects= new List<GameObject>();
+    [SerializeField] Transform ChaosBar;
 
 
+    //things for the 
+    private float ogTransform;
+    public float numberOfIssuesToCrash;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +49,7 @@ public class EventManager : MonoBehaviour
 
         numIssues = findNumIssues();
         setIssueText();
+        setChaosBar();
     }
 
 
@@ -180,4 +185,22 @@ public class EventManager : MonoBehaviour
     {
         Npcs = GameObject.FindGameObjectsWithTag("Item");
     }
+
+    public void setChaosBar()
+    {
+        if(numIssues == numberOfIssuesToCrash)
+        {
+
+        }
+        float remBar = numIssues / numberOfIssuesToCrash;
+
+
+        ChaosBar.transform.localScale =new Vector3(ChaosBar.transform.localScale.x, remBar, ChaosBar.transform.localScale.z);
+
+        //rembar needs to be between 0 and 1 , calculated by max and cur helth
+
+        
+        
+    }
+
 }
