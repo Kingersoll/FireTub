@@ -23,12 +23,14 @@ public class NPCNewGuy : MonoBehaviour
 
     [SerializeField] float spawnPower;
 
+    private EventManager EM;
+
     public bool inRoot = true;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        EM = GameObject.FindGameObjectWithTag("EventManager").GetComponent<EventManager>();
 
         whichFloor = Random.Range(1, 3); //Generate a 1 or 2.
 
@@ -189,7 +191,7 @@ public class NPCNewGuy : MonoBehaviour
         {
 
         }
-
+        EM.addScore(15);
         Destroy(gameObject);
     }
 
