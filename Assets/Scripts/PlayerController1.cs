@@ -300,13 +300,13 @@ public class PlayerController1 : MonoBehaviour
         if (facingRight)
         {
 
-            hits = Physics2D.RaycastAll(rayRight.position, Vector2.right, .3f);
+            hits = Physics2D.RaycastAll(rayRight.position, Vector2.right, .6f);
            
         }
         else
         {
 
-            hits = Physics2D.RaycastAll(rayLeft.position, Vector2.left, .3f);
+            hits = Physics2D.RaycastAll(rayLeft.position, Vector2.left, .6f);
             
         }
 

@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 7f0a5dbd9e8b5f14e921be04e0b7c32e
+guid: 196175674c9e78244997ff5a924f831c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9183894337806057184
-    second: Sprite_npc_3_0
+      213: -5538466703023020046
+    second: Sprite_NPC_man1_0
   - first:
-      213: -6265979219305705048
-    second: Sprite_npc_3_1
-  - first:
-      213: 6272930444721100865
-    second: Sprite_npc_3_2
-  - first:
-      213: -4872285707870892090
-    second: Sprite_npc_3_3
+      213: -680619874879765367
+    second: Sprite_NPC_man1_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +90,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_npc_3_0
+      name: Sprite_NPC_man1_0
       rect:
         serializedVersion: 2
         x: 9
@@ -110,38 +104,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a14150221deca41a29890968ab8bc7
-      internalID: 9183894337806057184
+      spriteID: ddd6b8d191170eb4688bd986fd34de57
+      internalID: -5538466703023020046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_npc_3_1
+      name: Sprite_NPC_man1_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 1
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e190dd128a789d34581ede9d5707d6b1
-      internalID: -6265979219305705048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_npc_3_2
-      rect:
-        serializedVersion: 2
-        x: 73
+        x: 41
         y: 1
         width: 14
         height: 29
@@ -152,29 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca04ac703ef736a489fd0db7d99df3e3
-      internalID: 6272930444721100865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_npc_3_3
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 1
-        width: 14
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a820b6d2fcd739143bbf0f81d734c441
-      internalID: -4872285707870892090
+      spriteID: c47ebbf89557e5843aee9291631e312e
+      internalID: -680619874879765367
       vertices: []
       indices: 
       edges: []
@@ -182,7 +134,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 81d208a7c6d96964a93eb6027608cfdc
+    spriteID: a2e431f3b325d054d861bfd1b82433e1
     internalID: 0
     vertices: []
     indices: 
