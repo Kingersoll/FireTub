@@ -28,7 +28,7 @@ TagManager:
   - RoomInteriors
   - NPCs
   - New Guy NPC
-  - 
+  - Text
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3752451367
     locked: 0
