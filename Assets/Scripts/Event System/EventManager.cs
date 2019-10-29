@@ -16,6 +16,8 @@ public class EventManager : MonoBehaviour
 
     [SerializeField] Text IssueText;
     [SerializeField] Text scoreText;
+
+    [SerializeField] AnimatorControllerParameter yspeed;
     // public List<GameObject> alertObjects= new List<GameObject>();
 
 

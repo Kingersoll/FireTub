@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 8bcc14481ee18d8478d24bd2b6d9edcd
+guid: 6ba9d8b3851f0f04fbf0fcd975ae9650
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1812506874534647587
-    second: Fire_Alert_0
+      213: -2525922156932038396
+    second: TempChaosBar_0
   - first:
-      213: 1119652283141995915
-    second: Fire_Alert_1
+      213: -5135047782587050874
+    second: TempChaosBar_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Alert_0
+      name: TempChaosBar_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 0
-        width: 23
-        height: 22
+        width: 18
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,20 +104,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba54fec28f749804883e4d14d8a6d012
-      internalID: 1812506874534647587
+      spriteID: 63617b336b3dd354e95b7791afc0fc36
+      internalID: -2525922156932038396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Alert_1
+      name: TempChaosBar_1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 0
-        width: 23
-        height: 22
+        x: 48
+        y: 5
+        width: 10
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdb19b1917c9c3c41b6ad98c6a7109e8
-      internalID: 1119652283141995915
+      spriteID: 766e7a938c89bb34c9bb3602e8a37a83
+      internalID: -5135047782587050874
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3618eb9de7e68d4478355a616807ec8f
+    spriteID: b08fb41e1969c0149bb565b83657564d
     internalID: 0
     vertices: []
     indices: 
