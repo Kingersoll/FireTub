@@ -23,6 +23,7 @@ public class PlayerController1 : MonoBehaviour
     [SerializeField] Transform rayRight;
     [SerializeField] Transform rayLeft;
 
+    Animator animator;
 
 
     private RoomManager roomMan;
@@ -33,12 +34,14 @@ public class PlayerController1 : MonoBehaviour
 
     void Start()
     {
+        
         sr = gameObject.GetComponent<SpriteRenderer>();
     
         holdingItem = false;
         facingRight = true;
 
-        
+        animator = GetComponent<Animator>();
+
         roomMan = GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManager>();
 
         //player and items ignore physics
@@ -190,6 +193,17 @@ public class PlayerController1 : MonoBehaviour
             flip();
             sr.flipX = false;
         }
+
+
+        float xSpeed = GetComponent<Rigidbody2D>().velocity.x;
+
+        if (Mathf.Abs(xSpeed) > 0)
+        {
+            animator.SetFloat("XSpeed", 1);
+        }
+        else
+            animator.SetFloat("XSpeed", -1);
+
     }
 
 

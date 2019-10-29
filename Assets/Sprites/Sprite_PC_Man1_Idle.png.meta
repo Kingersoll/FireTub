@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 8bcc14481ee18d8478d24bd2b6d9edcd
+guid: 11f2d733a591f254cb00547614d1f3ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1812506874534647587
-    second: Fire_Alert_0
+      213: 27698110887071930
+    second: Sprite_PC_Man1_Idle_0
   - first:
-      213: 1119652283141995915
-    second: Fire_Alert_1
+      213: -4613338701320466354
+    second: Sprite_PC_Man1_Idle_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Alert_0
+      name: Sprite_PC_Man1_Idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 23
-        height: 22
+        x: 9
+        y: 1
+        width: 14
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,20 +104,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba54fec28f749804883e4d14d8a6d012
-      internalID: 1812506874534647587
+      spriteID: fb8d400e46ef686409e9a4e4d5e9cab7
+      internalID: 27698110887071930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Alert_1
+      name: Sprite_PC_Man1_Idle_1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 0
-        width: 23
-        height: 22
+        x: 41
+        y: 1
+        width: 14
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdb19b1917c9c3c41b6ad98c6a7109e8
-      internalID: 1119652283141995915
+      spriteID: 9265717838f5eed4cbf51b6682576085
+      internalID: -4613338701320466354
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3618eb9de7e68d4478355a616807ec8f
+    spriteID: 2eba227d7b531e443abc7c9bfa84cb03
     internalID: 0
     vertices: []
     indices: 
