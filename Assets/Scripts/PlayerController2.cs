@@ -214,13 +214,13 @@ public class PlayerController2 : MonoBehaviour
         if (facingRight)
         {
 
-            hit = Physics2D.Raycast(rayRight.position, Vector2.right, .3f);
+            hit = Physics2D.Raycast(rayRight.position, Vector2.right, .6f);
             print(hit.distance);
         }
         else
         {
 
-            hit = Physics2D.Raycast(rayLeft.position, Vector2.left, .3f);
+            hit = Physics2D.Raycast(rayLeft.position, Vector2.left, .6f);
             print(hit.distance);
         }
 
